@@ -65,3 +65,28 @@ h1 {
 h3 {
     font-size: 20px;
 }
+
+.row-2 {
+    margin-top: 126px;
+    display: flex;
+    flex-direction: row;
+}
+
+.chartStyle {
+    background-color: #D9D9D9;
+    width: 598px;
+    height: 447px;
+    margin-left: 5%;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.incomeStyle,
+.outputStyle {
+    background-color: #D9D9D9;
+    width: 370px;
+    height: 447px;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin-left: 120px;
+}
