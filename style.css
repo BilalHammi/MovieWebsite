@@ -3,13 +3,20 @@ body {
     width: 100%;
     margin: 0px;
     padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .balance {
     background-color: #D9D9D9;
     border-radius: 10px;
-    width: 990px;
+    width: 995px;
     height: 173px;
+    margin-left: 5%;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .row-1 {
@@ -26,4 +33,35 @@ body {
     margin-left: 75px;
     margin-right: 75px;
     margin-top: 56px;
+}
+
+button {
+    background-color: #D9D9D9;
+    width: 186px;
+    height: 65px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 400px;
+    box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:first-child {
+    margin-bottom: 40px;
+}
+
+button:hover {
+    background-color: rgb(34, 34, 34);
+    transition: 0.5s ease;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    margin-top: 0px;
+}
+
+h3 {
+    font-size: 20px;
 }
