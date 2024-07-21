@@ -1,22 +1,24 @@
-let url = 'https://imdb8.p.rapidapi.com/auto-complete?q=star%20wars%20';
-const options = {
-    method: 'GET',
-    headers: {
-        'x-rapidapi-key': '4ceeb87f83mshfbe8769ade08178p1691f9jsn0d2c6aa0608e',
-        'x-rapidapi-host': 'imdb8.p.rapidapi.com'
+const inputId = document.getElementById("inputBtn");
+const bodyTag = document.querySelector("body");
+const newDivParent = document.createElement("div");
+const newDivChild = document.createElement("div");
+const parentDiv = document.getElementById("parentDiv");
+const newDivParentId = document.getElementById("nDivParent");
+const arrayIdElement = ["balanceId", "buttonsId", "chartId", "incomeId", "outputId", "nDivParent"];
+
+inputId.addEventListener("click", () => {
+    newDivChild.classList.add("formDiv");
+    newDivParent.setAttribute("id", "nDivParent");
+    parentDiv.appendChild(newDivParent);
+    newDivParent.appendChild(newDivChild);
+    for (let i = 0; i < arrayIdElement.length; i++) {
+        const element = arrayIdElement[i];
+        if (element === "nDivParent") {
+            newDivParent.classList.add("center", "blurOff");
+        } else {
+            document.getElementById(element).classList.add("blurOn");
+        }
+
     }
-};
 
-try {
-    const response = await fetch(url, options);
-    const result = await response.json()
-        .then(data => {
-            const list = data.d;
-            list.map((item) => {
-                console.log(item);
-            })
-        })
-
-} catch (error) {
-    console.error(error);
-}
+});
