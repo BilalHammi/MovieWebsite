@@ -113,6 +113,23 @@
             .blurOff {
                 filter: blur(0px);
             }
+            .buttonStyle {
+                background-color: #D9D9D9;
+                width: 180px;
+                height: 65px;
+                font-weight: bold;
+                font-size: 20px;
+                border-radius: 10px;
+                border: none;
+                box-shadow: 8px 5px 10px rgba(0, 0, 0, 0.2);
+                margin-bottom: 40px;
+            }
+            .centeren {
+                display: flex;
+                justify-content: space-evenly;
+                position: relative;
+                align-items: end;
+            }
         }
         
         @media screen and (min-width: 500px) {
